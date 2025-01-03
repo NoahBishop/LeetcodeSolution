@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{56214b8c-a4e7-42aa-8a0d-ae233056b457}</ProjectGuid>
+    <RootNamespace>Leetcode</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Leetcode.cpp" />
+    <ClCompile Include="Solution135.h" />
+    <ClCompile Include="Solution188.h" />
+    <ClCompile Include="Solution203.h" />
+    <ClCompile Include="Solution496.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Solution1035.h" />
+    <ClInclude Include="Solution1143.h" />
+    <ClInclude Include="Solution115.h" />
+    <ClInclude Include="Solution121.h" />
+    <ClInclude Include="Solution122.h" />
+    <ClInclude Include="Solution123.h" />
+    <ClInclude Include="Solution139.h" />
+    <ClInclude Include="Solution198.h" />
+    <ClInclude Include="Solution213.h" />
+    <ClInclude Include="Solution279.h" />
+    <ClInclude Include="Solution300.h" />
+    <ClInclude Include="Solution309.h" />
+    <ClInclude Include="Solution322.h" />
+    <ClInclude Include="Solution337.h" />
+    <ClInclude Include="Solution377.h" />
+    <ClInclude Include="Solution392.h" />
+    <ClInclude Include="Solution407.h" />
+    <ClInclude Include="Solution42.h" />
+    <ClInclude Include="Solution474.h" />
+    <ClInclude Include="Solution1005.h" />
+    <ClInclude Include="Solution101.h" />
+    <ClInclude Include="Solution102.h" />
+    <ClInclude Include="Solution104.h" />
+    <ClInclude Include="Solution1049.h" />
+    <ClInclude Include="Solution105.h" />
+    <ClInclude Include="Solution106.h" />
+    <ClInclude Include="Solution107.h" />
+    <ClInclude Include="Solution110.h" />
+    <ClInclude Include="Solution111.h" />
+    <ClInclude Include="Solution112.h" />
+    <ClInclude Include="Solution116.h" />
+    <ClInclude Include="Solution131.h" />
+    <ClInclude Include="Solution134.h" />
+    <ClInclude Include="Solution17.h" />
+    <ClInclude Include="Solution199.h" />
+    <ClInclude Include="Solution216.h" />
+    <ClInclude Include="Solution222.h" />
+    <ClInclude Include="Solution226.h" />
+    <ClInclude Include="Solution239.h" />
+    <ClInclude Include="Solution1.h" />
+    <ClInclude Include="Solution1047.h" />
+    <ClInclude Include="Solution142.h" />
+    <ClInclude Include="Solution15.h" />
+    <ClInclude Include="Solution150.h" />
+    <ClInclude Include="Solution151.h" />
+    <ClInclude Include="Solution160.h" />
+    <ClInclude Include="Solution18.h" />
+    <ClInclude Include="Solution19.h" />
+    <ClInclude Include="Solution20.h" />
+    <ClInclude Include="Solution202.h" />
+    <ClInclude Include="Solution206.h" />
+    <ClInclude Include="Solution209.h" />
+    <ClInclude Include="Solution225.h" />
+    <ClInclude Include="Solution232.h" />
+    <ClInclude Include="Solution24.h" />
+    <ClInclude Include="Solution242.h" />
+    <ClInclude Include="Solution257.h" />
+    <ClInclude Include="Solution28.h" />
+    <ClInclude Include="Solution332.h" />
+    <ClInclude Include="Solution343.h" />
+    <ClInclude Include="Solution347.h" />
+    <ClInclude Include="Solution349.h" />
+    <ClInclude Include="Solution37.h" />
+    <ClInclude Include="Solution376.h" />
+    <ClInclude Include="Solution383.h" />
+    <ClInclude Include="Solution39.h" />
+    <ClInclude Include="Solution40.h" />
+    <ClInclude Include="Solution404.h" />
+    <ClInclude Include="Solution406.h" />
+    <ClInclude Include="Solution416.h" />
+    <ClInclude Include="Solution429.h" />
+    <ClInclude Include="Solution435.h" />
+    <ClInclude Include="Solution45.h" />
+    <ClInclude Include="Solution452.h" />
+    <ClInclude Include="Solution454.h" />
+    <ClInclude Include="Solution455.h" />
+    <ClInclude Include="Solution459.h" />
+    <ClInclude Include="Solution46.h" />
+    <ClInclude Include="Solution47.h" />
+    <ClInclude Include="Solution494.h" />
+    <ClInclude Include="Solution503.h" />
+    <ClInclude Include="Solution51.h" />
+    <ClInclude Include="Solution513.h" />
+    <ClInclude Include="Solution515.h" />
+    <ClInclude Include="Solution516.h" />
+    <ClInclude Include="Solution518.h" />
+    <ClInclude Include="Solution53.h" />
+    <ClInclude Include="Solution541.h" />
+    <ClInclude Include="Solution55.h" />
+    <ClInclude Include="Solution56.h" />
+    <ClInclude Include="Solution583.h" />
+    <ClInclude Include="Solution59.h" />
+    <ClInclude Include="Solution617.h" />
+    <ClInclude Include="Solution62.h" />
+    <ClInclude Include="Solution63.h" />
+    <ClInclude Include="Solution637.h" />
+    <ClInclude Include="Solution647.h" />
+    <ClInclude Include="Solution654.h" />
+    <ClInclude Include="Solution673.h" />
+    <ClInclude Include="Solution700.h" />
+    <ClInclude Include="Solution704.h" />
+    <ClInclude Include="Solution27.h" />
+    <ClInclude Include="Solution707.h" />
+    <ClInclude Include="Solution714.h" />
+    <ClInclude Include="Solution718.h" />
+    <ClInclude Include="Solution72.h" />
+    <ClInclude Include="Solution738.h" />
+    <ClInclude Include="Solution739.h" />
+    <ClInclude Include="Solution746.h" />
+    <ClInclude Include="Solution763.h" />
+    <ClInclude Include="Solution77.h" />
+    <ClInclude Include="Solution78.h" />
+    <ClInclude Include="Solution860.h" />
+    <ClInclude Include="Solution90.h" />
+    <ClInclude Include="Solution93.h" />
+    <ClInclude Include="Solution96.h" />
+    <ClInclude Include="Solution968.h" />
+    <ClInclude Include="Solution977.h" />
+    <ClInclude Include="Solution98.h" />
+    <ClInclude Include="Solution530.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
